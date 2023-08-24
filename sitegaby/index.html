@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Filme preferido</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <!--menu-->
+        <nav class="navbar col-12 position-fixed bg-dark navbar-expand-lg " data-bs-theme="dark" style="z-index: 999;"> 
+            <div class="container-fluid col-11">
+              <a class="navbar-brand" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Filme">Filme</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Direitos">Direitos</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <!--Carrossel-->
+
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img3.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img5.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!--Cards-->
+          <h2 id="Personagens" class="text-center">SINOPSE</h2>
+
+          <div class="row row-cols-1 row-cols-md-2 g-4 col-11 m-auto">
+            <div class="col" >
+              <div class="card">
+                <img src="img/img6.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Adoraveis mulheres</h5>
+                  <p class="card-text">
+                    Não recomendado para menores de 10 anos
+                    As irmãs Jo (Saoirse Ronan), Beth (Eliza Scanlen), Meg (Emma Watson) e Amy (Florence Pugh) 
+                    amadurecem na virada da adolescência para a vida adulta enquanto os Estados Unidos atravessam a Guerra Civil. 
+                    Com personalidades completamente diferentes, elas enfrentam os desafios de crescer unidas pelo amor que nutrem umas pelas outras.
+                    <!--Início do código Modal-->
+                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                       Ver mais...
+                      </button>
+                    <!-- Modal -->
+                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Adoraveis mulheres
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                            <div class="modal-body">
+                              <img src="img/img7.jpeg" alt="" class="card-img-top">
+                              <p class="card-text">
+                                “Moral não vende, hoje em dia”, diz um personagem em certo momento de Adoráveis Mulheres, 
+                                enquanto provoca uma discussão sobre as exigências e necessidades do mercado editorial nos anos 1860.
+                                 É curioso pensar como esta frase tenta se manter atual ainda nos dias de hoje, e como a história da mulher na sociedade está atrelada ao moralismo de diferentes épocas.
+                                  Até que ponto a mulher pode ousar sem ofender os "bons costumes", ou ser inteligente sem se tornar ameaça?
+                                   Mais do que sobre os anseios de quatro irmãs, esta nova adaptação para o cinema costura a história de três grandes mulheres com muito em comum: a protagonista Jo March (Saoirse Ronan), a autora da obra original Louisa May Alcott e a diretora Greta Gerwig. 
+
+                              </p>
+
+                            </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                         </div>
+                       </div>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>   
+
+          <!--Conteúdo-->
+
+          <br><br>
+          <hr class="col-11 m-auto/">
+          <div id="About" class="col-11 m-auto">
+            <h2 class="text-center">Sobre</h2>
+            <p class="text-center"></p>
+          </div>
+           <hr class="col-11 m-auto/">
+           <br> "Adoráveis Mulheres" (2019) é um verdadeiro tesouro cinematográfico que conquista o coração e a alma do espectador. Sob a magistral direção de Greta Gerwig, esta adaptação do clássico romance de Louisa May Alcott brilha com uma narrativa envolvente, atuações excepcionais e uma abordagem contemporânea que respeita a tradição, tornando-se um filme obrigatório para os amantes do cinema e da literatura.
+
+           A trama habilmente não-linear transporta o público para a Nova Inglaterra do século XIX, onde conhecemos as quatro distintas irmãs March - Jo (Saoirse Ronan), Meg (Emma Watson), Amy (Florence Pugh) e Beth (Eliza Scanlen). Cada uma delas é uma jóia única em seu próprio direito, com sonhos, desejos e personalidades que são lindamente desenvolvidos ao longo do filme.
+           
+           Um dos pontos fortes indiscutíveis do filme é o elenco estelar, cujas atuações são simplesmente arrebatadoras. Saoirse Ronan brilha como Jo March, uma jovem escritora determinada a seguir sua paixão e independência em uma sociedade onde o sucesso feminino não era encorajado. Sua interpretação emocionante é acompanhada por Florence Pugh, que traz uma profundidade surpreendente à personagem de Amy March, tornando-a muito mais do que uma figura secundária.
+           
+           O filme não seria completo sem a excelente atuação de Laura Dern, que dá vida à adorável Marmee March, uma mãe inspiradora e compassiva que guia suas filhas por caminhos desafiadores com amor incondicional. A química entre as atrizes é autêntica, e suas interações familiares transmitem uma sensação calorosa e acolhedora, conectando o público a essas personagens encantadoras.
+           
+           A direção de arte meticulosa e a cinematografia deslumbrante são elementos fundamentais para a imersão na época retratada. Cada cenário é meticulosamente construído, repleto de detalhes que transportam o público diretamente para a atmosfera da Nova Inglaterra do século XIX. A trilha sonora complementa perfeitamente a experiência, aumentando ainda mais a emotividade e intensidade de cada cena.
+           
+           O que torna "Adoráveis Mulheres" verdadeiramente especial é o modo como celebra o poder feminino em todas as suas nuances. Greta Gerwig honra a história original, mas também insufla a narrativa com sua perspectiva moderna, criando um filme que ressoa com a jornada das mulheres no século XXI. Ao destacar a importância da amizade, do amor fraternal e da busca pela independência, o filme transcende o tempo e se torna uma história universal para todas as gerações.
+           
+           Em suma, "Adoráveis Mulheres" é uma experiência cinematográfica excepcional, repleta de emoção e inspiração. Greta Gerwig e o elenco brilhante entregam uma obra-prima que honra a tradição literária, ao mesmo tempo que abre caminho para uma nova geração de espectadores apreciarem a atemporalidade desta história. Uma verdadeira celebração da vida e do poder feminino, este filme é uma obra para ser apreciada e revisitada muitas vezes.<br>
+
+           <!--Rodapé-->
+
+           <footer class="page-footer p-5 col-11 m-auto" style="background-color: 333">
+            <div id="Direitos" class="text-center">
+                <a href="#">@2023 copyright: Gabriele Oliveira</a>
+            </div>
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>
